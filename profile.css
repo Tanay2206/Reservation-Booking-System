@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-image: linear-gradient(#306888, #6bb8e9);
+}
+
+.navbar-brand{
+    font-size: 30px !important;
+    font-weight: bold;
+}
+
+.nav-item{
+    font-size: 22px !important;
+    font-weight: bold;
+}
+
+.action-btn{
+    background-image: linear-gradient(#306888, #6bb8e9);
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 22px !important;
+}
+
+.nav-tabs .nav-link.active{
+    background-image: linear-gradient(#306888, #6bb8e9);
+    color: white !important;
+}
+
+ /* Bill CSS */
+
+ .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.bill-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.bill-info p {
+    margin: 10px 0;
+}
+
+.modals {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contents {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
