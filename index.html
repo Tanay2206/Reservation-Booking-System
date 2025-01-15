@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/fontAwesome.css" /> -->
+    <!-- start css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- end css link  -->
+
+    <!-- start js link -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sweetalert.js"></script>
+    <!-- end js link  -->
+    <title>HomePage</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light">
+      <div class="container-fluid">
+        <img src="img/logo.jpg" class="rounded-circle" width="60" />
+        <a href="#" class="mx-4 text-white navbar-brand"> RBS </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#myMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="myMenu">
+          <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item fw-bold text-white">Tanay</li>
+            <!-- <button class="nav-item fw-bold text-blue">Admin</button> -->
+            <!-- <button id="loginButton">Admin</button> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br /><br /><br />
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- nav tab  -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#signup" class="nav-link" data-bs-toggle="tab">
+                Signup
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#login" class="nav-link active" data-bs-toggle="tab">
+                Login
+              </a>
+            </li>
+          </ul>
+          <!-- nav panes  -->
+
+          <div class="tab-content">
+            <div class="tab-pane container mt-3" id="signup">
+              <img src="img/signup-2.jpg" class="w-25" alt="" />
+              <form class="reg-form">
+                <input
+                  required
+                  name="fullName"
+                  type="text "
+                  placeholder="Fullname"
+                  class="mb-3 form-control"
+                />
+                <input
+                  required
+                  name="hotelName"
+                  type="text "
+                  placeholder="Hotelname"
+                  class="mb-3 form-control"
+                />
+                <input
+                  required
+                  name="totalRoom"
+                  type="text "
+                  placeholder="No of Hotels Room"
+                  class="mb-3 form-control"
+                />
+                <input
+                  required
+                  name="mobile"
+                  type="number "
+                  placeholder="Phone"
+                  class="mb-3 form-control"
+                />
+                <input
+                  required
+                  name="email"
+                  type="email "
+                  placeholder="Email"
+                  class="mb-3 form-control"
+                />
+                <input
+                  required
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  class="mb-3 form-control"
+                />
+                <button type="submit" class="btn btn-primary w-100">
+                  Register
+                </button>
+              </form>
+            </div>
+            <div class="tab-pane active container mt-3" id="login">
+              <!-- <img src="img/signup-2.jpg" class="w-25" alt="" /> -->
+              <form class="login-form">
+                <input
+                  type="email "
+                  placeholder="Email"
+                  class="mb-3 form-control"
+                  id="email"
+                />
+
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="mb-3 form-control"
+                />
+                <button type="button" onclick="sendOTP()">Send OTP</button
+                ><br /><br />
+
+                <input
+                  type="text "
+                  placeholder="OTP"
+                  class="mb-3 form-control"
+                  id="otp"
+                />
+                <button type="button" onclick="verifyOTP()">Verify OTP</button
+                ><br /><br />
+                <p id="status"></p>
+                <button type="submit" class="btn btn-primary w-100">
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center col-md-6 mt-5"
+        >
+          <img src="img/hotel-1.jpg" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- start js link -->
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gni_z-fv_oT7hkbeT");
+      })();
+    </script>
+    <!-- end js link -->
+  </body>
+</html>
